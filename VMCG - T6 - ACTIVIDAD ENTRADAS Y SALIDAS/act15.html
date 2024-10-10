@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/JavaScript">
+
+        // Realiza un script en el que un usuario introduzca una frase (ésta puede contener todo tipo de caracteres), 
+        // ir mostrando todos los caracteres uno a uno, excepto si es un número que lo obviará. 
+
+        function fraseSeparada(){
+            var frase =  prompt("Introduce una frase para separarla por caracteres: ");
+            var lista = [];
+            for (let i = 0; i < frase.length; i++){
+                if (isNaN(frase[i])){
+                    lista.push(frase[i]);
+                }
+            }  
+            document.write(lista);
+        }
+
+        fraseSeparada()
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // El factorial de un número entero n es una operación matemática que consiste en multiplicar todos los factores n x (n-1) x (n-2) x ... x 1. 
+        // Crear un script que calcule el factorial de un número entero introducido por el usuario.
+
+        function factorialnumero(){
+            numero = prompt("Dime un número para sacar su factorial");
+            acc = 1
+            for( i = 1; i <= numero; i++){
+                acc *= i
+            }
+            document.write(acc)
+        }
+
+        factorialnumero();;
+
+    </script>
+</body>
+</html>

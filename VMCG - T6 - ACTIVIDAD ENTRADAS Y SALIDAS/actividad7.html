@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. Realiza un script que le pregunte al usuario la nota obtenida en un examen, 
+        // y en función del resultado devuelva “Suspenso”, “Aprobado”, “Notable” o “Sobresaliente”. 
+
+        function notaExamen(){
+            nota = prompt("¿Qué nota has sacado?");
+
+            if (nota >= 0 && nota < 5){
+                document.write("Suspenso, tu nota fue: " + nota);
+            }else if(nota >= 5 && nota < 7){
+                document.write("Aprobado, tu nota fue: " + nota);
+            }else if(nota >= 7 && nota < 9){
+                document.write("Notable, tu nota fue: " + nota);
+            }else if(nota >= 9 && nota <= 10){
+                document.write("Sobresaliente, tu nota fue: " + nota);
+            }else{
+                document.write("Nota errónea, vuelva a intentarlo");
+            }
+        }
+        notaExamen();
+    </script>
+</body>
+</html>

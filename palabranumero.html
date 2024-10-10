@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function palabraNumero(){
+            var palabra = prompt("Introduce la palabra");
+            var numero = prompt("INtroduce un numero")
+            if (numero >= 0 && numero <= palabra.length){
+                document.write("La palabra es " + palabra.trim()[numero - 1])
+            }else{
+            alert("ErrorrR")
+            }
+        }
+        palabraNumero()
+    </script>
+</body>
+</html>
+
+<!-- preguntar al usuario por una frase o una palabra y por un numero
+y que el programa diga cuantos caracteres hay en esa posicion, tener cuenta 
+que el numero sea ni menor ni mayor que la palabra -->
+
