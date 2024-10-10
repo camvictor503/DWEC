@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Dado un array, con 6 elementos, dos valores booleanos, dos valores numéricos y dos cadenas de caracteres. Realizar un script que devuelva la siguiente información: 
+
+    Ejemplo: A partir del siguiente array que se proporciona:
+    
+     var valores = [true, 5, false, "hola", "adios", 2];
+    
+        Determinar cuál de los dos elementos de texto es mayor
+        Determinar el resultado de dos operaciones lógicas realizadas con los elementos booleanos
+        Determinar el resultado de dos operaciones aritméticas realizadas con los elementos numéricos -->
+    
+    <script>
+
+        function determinarElementos(){
+            var valores = [true, 5, false, "hola", "adios", 2];
+            var listaBooleanos = []
+            var listaNumerica = []
+            var listaCadenas = []
+
+            for(i = 0; i < valores.length ; i++){
+                if (typeof(valores[i]) == "boolean"){
+                    listaBooleanos.push(valores[i]);
+
+                }else if(typeof(valores[i]) == "string"){
+                    listaCadenas.push(valores[i]);
+
+                }else if(typeof(valores[i]) == "number"){
+                    listaNumerica.push(valores[i]);             
+
+                }else{
+                    alert ("Dentro del array no hay ningun valor de tipo booleano, numerico o cadena de texto")
+                }
+            }
+
+            sumaLista = listaNumerica
+
+        }
+
+    </script>
+</body>
+</html>
